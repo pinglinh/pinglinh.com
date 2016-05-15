@@ -1,0 +1,23 @@
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+
+margin: 0px;padding: 0px;
+
+}
+
+.my-picture
+ {
+  display: inline;
+}
+
+.title {
+  display: inline-block;
+  vertical-align: 60px;
+}
+
+
+
+.my-picture img {
+  height: 60px;
+}
