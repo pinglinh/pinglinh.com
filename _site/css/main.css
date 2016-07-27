@@ -164,13 +164,16 @@ pre {
     color: #424242; }
 
 .site-nav {
-  float: right;
-  line-height: 56px; }
+  float: left;
+  line-height: 56px;
+  position: fixed;
+  margin: 20px 50px 20px 50px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #111;
-    line-height: 1.5; }
+    line-height: 1.5;
+    display: block; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
