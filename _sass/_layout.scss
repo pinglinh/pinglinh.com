@@ -2,10 +2,8 @@
  * Site header
  */
 .site-header {
-    // border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -28,17 +26,9 @@
     float: left;
     line-height: 56px;
     position: fixed;
-    // border-right: 1px solid #000;
     height: 100%;
     background-color: #42CFC4;
     
-    .nav-inbetween-box {
-    margin: auto;
-    height: 100%;
-    // padding-top: 10%;
-    // padding-bottom: 10%;
-    }
-
     .menu-icon {
         display: none;
 
@@ -60,12 +50,15 @@
             transition: none 200ms ease-out;
             transition-property: color, background;
         }
-
-        // // Gaps between nav items, but not on the last one
-        // &:not(:last-child) {
-        //     margin-right: 20px;
-        // }
     }
+
+.trigger { // Flexbox
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+    
 
     @include media-query($on-palm) {
         position: absolute;
