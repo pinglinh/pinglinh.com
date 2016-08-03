@@ -168,9 +168,6 @@ pre {
   position: fixed;
   height: 100%;
   background-color: #42CFC4; }
-  .site-nav .nav-inbetween-box {
-    margin: auto;
-    height: 100%; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
@@ -187,6 +184,11 @@ pre {
       text-decoration: none;
       transition: none 200ms ease-out;
       transition-property: color, background; }
+  .site-nav .trigger {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
