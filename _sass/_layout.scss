@@ -1,6 +1,21 @@
 /**
  * Site header
  */
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
 .site-header {
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -23,25 +38,57 @@
 }
 
 .site-nav {
-    float: left;
+    flex-grow: 0;
     line-height: 56px;
-    position: fixed;
-    height: 100%;
     background-color: #42CFC4;
     
     .menu-icon {
         display: none;
-
     }
 
     .page-link {
-        color: $text-color;
+        position: relative;
+        color: #15a193;
         line-height: $base-line-height;
         display: block;
         text-align: left;
         padding: 50px 100px;
         background-color: #42CFC4;
-        height: 25%;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        // height: 25%;
+
+
+        &::before {
+            top: 20px;
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+
+        &::after {
+            bottom: 20px;
+            -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            transform: translateY(10px);
+        }
+
+        &::before, 
+        &::after {
+            position: absolute;
+            left: 0;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 10%;
+            height: 2px;
+            background: #636363;
+            content: '';
+            opacity: 0;
+            -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+            -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+            transition: opacity 0.3s, transform 0.3s;
+        }
 
         &:hover {
             color: #45ADA8;
@@ -49,11 +96,26 @@
             text-decoration: none;
             transition: none 200ms ease-out;
             transition-property: color, background;
+
+            &::before {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
         }
     }
 
 .trigger { // Flexbox
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;

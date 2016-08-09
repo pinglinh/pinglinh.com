@@ -147,6 +147,17 @@ pre {
 /**
  * Site header
  */
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
 .site-header {
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
@@ -163,29 +174,64 @@ pre {
     color: #424242; }
 
 .site-nav {
-  float: left;
+  flex-grow: 0;
   line-height: 56px;
-  position: fixed;
-  height: 100%;
   background-color: #42CFC4; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    position: relative;
+    color: #15a193;
     line-height: 1.5;
     display: block;
     text-align: left;
     padding: 50px 100px;
     background-color: #42CFC4;
-    height: 25%; }
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap; }
+    .site-nav .page-link::before {
+      top: 20px;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      transform: translateY(-10px); }
+    .site-nav .page-link::after {
+      bottom: 20px;
+      -webkit-transform: translateY(10px);
+      -moz-transform: translateY(10px);
+      transform: translateY(10px); }
+    .site-nav .page-link::before, .site-nav .page-link::after {
+      position: absolute;
+      left: 0;
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 10%;
+      height: 2px;
+      background: #636363;
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s; }
     .site-nav .page-link:hover {
       color: #45ADA8;
       background: #FFFFFF;
       text-decoration: none;
       transition: none 200ms ease-out;
       transition-property: color, background; }
+      .site-nav .page-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px); }
+      .site-nav .page-link:hover::after {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px); }
   .site-nav .trigger {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     flex-direction: column;
     height: 100%; }
