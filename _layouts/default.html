@@ -4,7 +4,7 @@
   {% include head.html %}
 
 <body>
-  <div class="content">
+  <div class="whole-content">
       <nav class="site-nav">
           <a href="#" class="menu-icon">
             <svg viewBox="0 0 18 15">
@@ -21,19 +21,21 @@
             {% endfor %}
           </div>
       </nav>
-  </div>
-
-      <div class="main">
-      {% include header.html %}  
-        <div class="page-content">
-          <div class="wrapper">
-            {{ content }}
+  
+    <div class="site-content">
+        <div class="main">
+        {% include header.html %}  
+          <div class="page-content">
+            <div class="wrapper">
+              {{ content }}
+            </div>
           </div>
+           
+           {% include footer.html %}
+        
         </div>
-         
-         {% include footer.html %}
-      
       </div>
+  </div>
 </body>
 
 </html>
