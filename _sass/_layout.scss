@@ -2,18 +2,34 @@
  * Site header
  */
 
+html {
+    height: 100%;
+}
+
 body {
+    overflow: hidden;
+    height: 100%;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: stretch;
+}
+
+.whole-content {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.site-content {
+    overflow: hidden;
 }
 
 .main {
-    width: 100%;
     height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
 }
+
 
 
 .site-header {
@@ -38,37 +54,45 @@ body {
 }
 
 .site-nav {
-    flex-grow: 0;
-    line-height: 56px;
-    background-color: #42CFC4;
+    // flex-grow: 0;
+    // margin-right: 20px;
+    // line-height: 56px;
+    // background-color: #42CFC4;
     
+    // display: flex;
+    // flex-direction: column;
+    // height: 100%;
+    
+
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        position: relative;
         color: #15a193;
         line-height: $base-line-height;
-        display: block;
-        text-align: left;
-        padding: 50px 100px;
+        padding: 0px 6em;
         background-color: #42CFC4;
         text-align: center;
         text-transform: uppercase;
         white-space: nowrap;
-        // height: 25%;
-
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 25vh;
 
         &::before {
-            top: 20px;
+            top: 40px;
             -webkit-transform: translateY(-10px);
             -moz-transform: translateY(-10px);
             transform: translateY(-10px);
         }
 
         &::after {
-            bottom: 20px;
+            bottom: 40px;
             -webkit-transform: translateY(10px);
             -moz-transform: translateY(10px);
             transform: translateY(10px);
@@ -76,11 +100,9 @@ body {
 
         &::before, 
         &::after {
-            position: absolute;
+            position: relative;
             left: 0;
-            width: 70%;
-            margin-left: 15%;
-            margin-right: 10%;
+            width: 100%;
             height: 2px;
             background: #636363;
             content: '';
@@ -113,14 +135,7 @@ body {
         }
     }
 
-.trigger { // Flexbox
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-}
-    
+
 
     @include media-query($on-palm) {
         position: absolute;
