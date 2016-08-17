@@ -565,5 +565,9 @@ body {
   color: #333333;
   padding: 0px 5px 0px 5px; }
 
+.fa-envelope {
+  color: #F25C4E;
+  padding: 0 5px; }
+
 .fa-times {
   color: #272822; }
