@@ -197,6 +197,20 @@ body {
     padding: $spacing-unit 0;
 }
 
+.footer {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media {
+    margin: 5px 0;
+}
+
+.title-mail {
+    margin: 5px 0;
+}
+
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
