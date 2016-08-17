@@ -37,6 +37,7 @@ body {
     min-height: 56px;
     // Positioning context for the mobile navigation icon
     position: relative;
+    text-align: center;
 }
 
 .site-title {
@@ -45,7 +46,6 @@ body {
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
