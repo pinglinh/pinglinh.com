@@ -82,7 +82,7 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 20vh;
+        height: calc( #{$nav-link-height} / #{$nav-link-number} );
 
         &::before {
             top: 40px;
