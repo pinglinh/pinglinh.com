@@ -180,6 +180,9 @@ body {
   .site-title, .site-title:visited {
     color: #424242; }
 
+.site-nav .current {
+  color: #45ADA8;
+  background-color: #FFFFFF; }
 .site-nav .menu-icon {
   display: none; }
 .site-nav .page-link {
@@ -565,7 +568,7 @@ body {
   color: #333333;
   padding: 0px 5px 0px 5px; }
 
-.fa-envelope {
+.fa-envelope:not(.different) {
   color: #F25C4E;
   padding: 0 5px; }
 
