@@ -14,15 +14,24 @@
             </svg>
           </a>
           <div class="trigger">
-            <a class="page-link" href="/">home</a>
-            
+            <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+            <a class="page-link" href="{{ site.baseurl }}/aboutme">About Me</a>
+            <a class="page-link" href="{{ site.baseurl }}/mywork">My Work</a>
+            <a class="page-link" href="{{ site.baseurl }}/blog">Blog</a>
+            <a class="page-link" href="{{ site.baseurl }}/contact">Contact</a>
+            <a class="page-link" href="{{ site.baseurl }}/pinglinhcv.pdf" target="_blank" download="Pinglinh CV">CV</a>
 
 
-            {% for my_page in site.pages %}
+
+
+
+
+
+<!--             {% for my_page in site.pages %}
               {% if my_page.title %}
               <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
               {% endif %}
-            {% endfor %}
+            {% endfor %} -->
           </div>
       </nav>
   

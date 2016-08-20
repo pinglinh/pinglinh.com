@@ -196,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 20vh; }
+  height: calc( 100vh / 6 ); }
   .site-nav .page-link::before {
     top: 40px;
     -webkit-transform: translateY(-10px);
