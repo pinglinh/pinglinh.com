@@ -9,9 +9,6 @@ html {
 body {
     overflow: hidden;
     height: 100%;
-    // display: flex;
-    // flex-direction: row;
-    // align-items: stretch;
 }
 
 .whole-content {
@@ -30,12 +27,9 @@ body {
     overflow: auto;
 }
 
-
-
 .site-header {
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-    // Positioning context for the mobile navigation icon
     position: relative;
     text-align: center;
 }
@@ -54,17 +48,6 @@ body {
 }
 
 .site-nav {
-    // flex-grow: 0;
-    // margin-right: 20px;
-    // line-height: 56px;
-    // background-color: #42CFC4;
-    
-    // display: flex;
-    // flex-direction: column;
-    // height: 100%;
-    
-    
-
 
     .menu-icon {
         display: none;
