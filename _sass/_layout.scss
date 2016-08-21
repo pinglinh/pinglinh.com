@@ -64,11 +64,8 @@ body {
     // height: 100%;
     
     
-    .current {
-        color: #45ADA8;
-        background-color: #FFFFFF;
-    }
-    
+
+
     .menu-icon {
         display: none;
     }
@@ -140,7 +137,10 @@ body {
         }
     }
 
-
+    .current {
+        color: #45ADA8;
+        background-color: #FFFFFF;
+    }
 
     @include media-query($on-palm) {
         position: absolute;
