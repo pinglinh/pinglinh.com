@@ -1,11 +1,11 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $base-font-family;
 }
 
 .photo-container {
   text-align: center;
   padding-top: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $base-font-family;
 }
 
 .profile-photo:hover {
