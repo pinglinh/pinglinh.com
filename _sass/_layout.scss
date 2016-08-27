@@ -70,6 +70,7 @@ body {
       flex-direction: column;
       height: calc( #{$nav-link-height} / #{$nav-link-number} );
       position: relative;
+      font-weight: bold;
       // padding: 0 20px;
       // height: 45px;
       // line-height: 45px;
