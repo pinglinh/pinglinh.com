@@ -8,15 +8,27 @@ body {
   font-family: $base-font-family;
 }
 
-.profile-photo:hover {
-  opacity: 1;
-}
-
 .profile-photo {
   width: 40%;
   border-radius: 50%;
   opacity: 0.7;
   min-width: 250px;
+}
+
+.profile-photo:hover {
+  opacity: 1;
+}
+
+.profile-photo-aboutme {
+  width: 40%;
+  border-radius: 50%;
+  opacity: 0.7;
+  min-width: 250px;
+  float: left;
+}
+
+.profile-photo-aboutme:hover {
+  opacity: 1;
 }
 
 // .icons {
