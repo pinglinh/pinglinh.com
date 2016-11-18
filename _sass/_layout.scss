@@ -230,6 +230,7 @@ body {
             -moz-transform: translateY(10px);
             transform: translateY(10px);
         }
+<<<<<<< HEAD
 
         &::before, 
         &::after {
@@ -265,7 +266,49 @@ body {
                 -moz-transform: translateY(0px);
                 transform: translateY(0px);
             }
+=======
+
+        &::before, 
+        &::after {
+            position: relative;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #878787;
+            content: '';
+            opacity: 0;
+            -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+            -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+            transition: opacity 0.3s, transform 0.3s;
+>>>>>>> af7b1837052a7c6e9e96bbbebc96ee22ceaf580d
         }
+
+        &:hover {
+            color: #45ADA8;
+            background: #FFFFFF;
+            text-decoration: none;
+            transition: none 200ms ease-out;
+            transition-property: color, background;
+
+            &::before {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+            &::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    .current {
+        color: #45ADA8;
+        background-color: #FFFFFF;
     }
 
     .current {
