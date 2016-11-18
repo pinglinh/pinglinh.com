@@ -4,9 +4,22 @@ title: My Work
 permalink: /mywork/
 ---
 
-<center>
-	<img class="work-preview" src="http://placehold.it/450x250">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis corporis facilis eaque cum minima. Culpa porro commodi neque vero. Magni sint eos perspiciatis, sit eius. Repellendus, iste voluptatem voluptatibus doloremque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nisi? Obcaecati corporis inventore reiciendis expedita, officiis quos laborum ratione sequi magnam voluptate, ut, maxime fugit perspiciatis, saepe veritatis necessitatibus ex.</p> 
-	<img class="work-preview" src="http://placehold.it/450x250">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius veritatis impedit vero recusandae, dignissimos eveniet atque doloremque ullam unde, consequuntur quas voluptas, tenetur pariatur quae minus hic incidunt facere, molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla assumenda accusamus esse obcaecati beatae, illum commodi ea ipsam dolores officiis dignissimos officia porro, fugit quisquam mollitia? Velit itaque, ducimus.</p>
-</center>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 my-work">
+				<h4>Penguin Eats Game</h3>
+
+				<img class="work-preview" src="{{ "/photos/penguineats.gif" | prepend: site.baseurl }}" alt="Penguin Eats Game">
+				
+					<p>This is a continuing project I am working on with Tomasz based on in-browser games using Ruby. We used a game framework called phaser and Ruby to Javascript compiler Opal.</p>
+			</div>
+			
+			<div class="col-md-6">
+				<h4>Other Project</h3>
+
+				<img class="work-preview" src="http://placehold.it/450x250">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius veritatis impedit vero recusandae, dignissimos eveniet atque doloremque ullam unde, consequuntur quas voluptas, tenetur pariatur quae minus hic incidunt facere, molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nulla assumenda accusamus esse obcaecati beatae, illum commodi ea ipsam dolores officiis dignissimos officia porro, fugit quisquam mollitia? Velit itaque, ducimus.</p>
+			</div>
+		</div>
+	</div>
