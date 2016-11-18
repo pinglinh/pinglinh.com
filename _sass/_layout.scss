@@ -230,7 +230,6 @@ body {
             -moz-transform: translateY(10px);
             transform: translateY(10px);
         }
-<<<<<<< HEAD
 
         &::before, 
         &::after {
@@ -266,7 +265,6 @@ body {
                 -moz-transform: translateY(0px);
                 transform: translateY(0px);
             }
-=======
 
         &::before, 
         &::after {
@@ -280,7 +278,6 @@ body {
             -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
             -moz-transition: opacity 0.3s, -moz-transform 0.3s;
             transition: opacity 0.3s, transform 0.3s;
->>>>>>> af7b1837052a7c6e9e96bbbebc96ee22ceaf580d
         }
 
         &:hover {
