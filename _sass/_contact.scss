@@ -1,3 +1,56 @@
-.message-dimension {
-	height: 200px;
+form {
+	max-width: 450px;
+	margin: 0 auto 50px;
+
+	button {
+		background-color: transparent;
+		text-align: center;
+		border: 2px solid #CCCCCC;
+		margin: 10px 0; 
+		width: 100%;
+		padding: 10px;
+	}
+
+	textarea {
+		border: 2px solid #CCCCCC;
+		margin: 10px 0; 
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+		background-color: transparent;
+		height: 200px;
+
+		padding-left: 40px;
+
+		&:focus {
+			outline: none;
+			border-color: #272822; 
+		}	
+	}
+
+	input {
+		border: 2px solid #CCCCCC;
+		margin: 10px 0; 
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+		background-color: transparent;
+		
+	    background-image: url('/photos/uxpin-icon-set_at.png');
+	    background-position: 10px 10px; 
+	    background-repeat: no-repeat;
+	    padding-left: 40px;
+
+		&:focus {
+			outline: none;
+			border-color: #272822; 
+		}			
+	}
+
+	label {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+
 }
