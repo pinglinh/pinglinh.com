@@ -1,14 +1,16 @@
 form {
-	max-width: 450px;
+	// max-width: 450px;
 	margin: 0 auto 50px;
 
 	button {
-		background-color: transparent;
+		background-color: $grey-color-light;
 		text-align: center;
 		border: 2px solid #CCCCCC;
 		margin: 10px 0; 
 		width: 100%;
 		padding: 10px;
+		border-radius: 4px;
+		font-weight: bold;
 	}
 
 	textarea {
@@ -19,8 +21,15 @@ form {
 		padding: 10px;
 		background-color: transparent;
 		height: 200px;
-
 		padding-left: 40px;
+
+		background-size: 20px 20px;
+	    background-image: url('../photos/compose.svg');
+	    background-position: 11px 10px; 
+	    background-repeat: no-repeat;
+	    padding-left: 40px;
+
+		border-radius: 4px;
 
 		&:focus {
 			outline: none;
@@ -28,7 +37,7 @@ form {
 		}	
 	}
 
-	input {
+	input[type=text] {
 		border: 2px solid #CCCCCC;
 		margin: 10px 0; 
 		width: 100%;
@@ -36,15 +45,43 @@ form {
 		padding: 10px;
 		background-color: transparent;
 		
-	    background-image: url('/photos/uxpin-icon-set_at.png');
+		background-size: 20px 20px;
+	    background-image: url('../photos/person.svg');
 	    background-position: 10px 10px; 
 	    background-repeat: no-repeat;
 	    padding-left: 40px;
+
+	    border-radius: 4px;
+
+	    
 
 		&:focus {
 			outline: none;
 			border-color: #272822; 
 		}			
+	}
+
+	input[type=email] {
+		border: 2px solid #CCCCCC;
+		margin: 10px 0; 
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+		background-color: transparent;
+		
+		background-size: 20px 20px;
+	    background-image: url('../photos/envelope.svg');
+	    background-position: 10px 10px; 
+	    background-repeat: no-repeat;
+	    padding-left: 40px;
+
+	    border-radius: 4px;
+
+		&:focus {
+			outline: none;
+			border-color: #272822; 
+		}
+
 	}
 
 	label {
