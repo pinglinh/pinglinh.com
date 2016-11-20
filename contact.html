@@ -7,55 +7,20 @@ permalink: /contact/
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-lg-offset-3 col-lg-6 col-lg-offset-3">
-			<p>Get in contact with me by using the form below or just send an email to lnguyenmy1@gmail.com.</p>
-		
+			<p>Get in contact with me by using the form below or send an email to lnguyenmy1@gmail.com.</p>
+				<form action="https://formspree.io/pinguinlinh@gmail.com" method="POST">
+				    
+					<label for="name">Name</label>
+				    <input type="text" id="email" name="name" placeholder="Name">
 
-	<form action="https://formspree.io/pinguinlinh@gmail.com" method="POST">
-	    
-		<label for="name">Name</label>
-	    <input type="text" id="email" name="name" placeholder="Name">
+				    <label for="email">Email</label>
+				    <input type="email" id="email" name="_replyto" placeholder="Email">
+					
+					<label for="message">Message</label>
+					<textarea id="message" name="message" placeholder="Message" class="message"></textarea>
 
-	    <label for="email">Email</label>
-	    <input type="email" id="email" name="_replyto" placeholder="Email">
-		
-		<label for="message">Message</label>
-		<textarea id="message" name="message" placeholder="Message" class="message"></textarea>
-
-	    <button type="submit" value="Send">Submit</button>
-	</form>
-
-
-
-			<!-- <form class="form-horizontal">
-
-			  <div class="form-group">
-			    <label for="name" class="col-md-offset-2 col-md-2 control-label">Name</label>
-			    <div class="col-md-4">
-			 	   <input type="name" class="form-control" id="name" placeholder="Name">
-			 	</div>
-			  </div>
-
-			  <div class="form-group">
-			    <label for="email" class="col-md-offset-2 col-md-2 control-label">Email</label>
-			    <div class="col-md-4">
-			      <input type="email" class="form-control" id="email" placeholder="Email">
-			    </div>
-			  </div>
-
-			  <div class="form-group">
-			    <label for="message" class="col-md-offset-2 col-md-2 control-label">Message</label>
-			    <div class="col-md-4">
-			      <input type="message" class="form-control message-dimension" id="message" placeholder="Message">
-			    </div>
-			  </div>
-
-			  <div class="form-group">
-			    <div class="col-md-offset-4 col-md-4">
-			      <button type="submit" class="btn btn-default btn-block">Submit</button>
-			    </div>
-			  </div>
-
-			</form> -->
-			</div>
+				    <button type="submit" value="Send">Submit</button>
+				</form>
+		</div>
 	</div>
 </div>
