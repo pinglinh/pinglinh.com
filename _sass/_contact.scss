@@ -1,6 +1,4 @@
 form {
-	// max-width: 450px;
-	margin: 0 auto 50px;
 
 	button {
 		background-color: $grey-color-light;
@@ -21,15 +19,13 @@ form {
 		padding: 10px;
 		background-color: transparent;
 		height: 200px;
-		padding-left: 40px;
+		border-radius: 4px;
 
 		background-size: 20px 20px;
 	    background-image: url('../photos/compose.svg');
 	    background-position: 11px 10px; 
 	    background-repeat: no-repeat;
 	    padding-left: 40px;
-
-		border-radius: 4px;
 
 		&:focus {
 			outline: none;
@@ -44,16 +40,13 @@ form {
 		text-align: left;
 		padding: 10px;
 		background-color: transparent;
+		border-radius: 4px;
 		
 		background-size: 20px 20px;
 	    background-image: url('../photos/person.svg');
 	    background-position: 10px 10px; 
 	    background-repeat: no-repeat;
 	    padding-left: 40px;
-
-	    border-radius: 4px;
-
-	    
 
 		&:focus {
 			outline: none;
@@ -68,14 +61,13 @@ form {
 		text-align: left;
 		padding: 10px;
 		background-color: transparent;
-		
+		border-radius: 4px;
+
 		background-size: 20px 20px;
 	    background-image: url('../photos/envelope.svg');
 	    background-position: 10px 10px; 
 	    background-repeat: no-repeat;
 	    padding-left: 40px;
-
-	    border-radius: 4px;
 
 		&:focus {
 			outline: none;
@@ -85,7 +77,6 @@ form {
 	}
 
 	label {
-		display: inline-block;
 		text-align: center;
 		width: 100%;
 	}
