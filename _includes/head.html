@@ -4,16 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>pinglinh // {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  
-<!-- 		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-		    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css"> -->
 	<link rel="stylesheet" href="{{ "/css/fontawesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/bootstrap/bootstrap.min.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.baseurl }}">
   <link rel="icon" href="{{ "/photos/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon">
-<!-- <link rel="stylesheet" href="{{ "/css/stylesheet.css" | prepend: site.baseurl }}"> -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Damion|Lato' rel='stylesheet'>
-<!--   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type='text/css'> -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/css/hover-min.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
