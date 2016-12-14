@@ -48,6 +48,7 @@ body {
   }
 }
 
+@media (min-device-width: "601px") {
 .site-nav {
 
   .menu-icon {
@@ -144,6 +145,7 @@ body {
     background-color: #FFFFFF;
   }
 
+}
 }
 
 @media (max-device-width: $on-palm) {
