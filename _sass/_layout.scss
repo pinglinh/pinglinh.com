@@ -48,7 +48,7 @@ body {
   }
 }
 
-@media (min-device-width: "601px") {
+@media (min-device-width: "801px") {
 .site-nav {
 
   .menu-icon {
@@ -148,12 +148,12 @@ body {
 }
 }
 
-@media (max-device-width: $on-palm) {
+@media (max-device-width: "799px") {
   .site-nav {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    background-color: #DEDEDE;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
@@ -167,6 +167,7 @@ body {
       line-height: 0;
       padding-top: 10px;
       text-align: center;
+      background-color: #EEEEEE;
 
       > svg {
         width: 18px;
@@ -190,15 +191,19 @@ body {
 
     .page-link-3 {
       color: #424242;
-      background-color: transparent;
-      display: block;
+      line-height: $base-line-height;
       padding: 5px 10px;
-
-      &:not(:last-child) {
-          margin-right: 0;
-      }
-
-      margin-left: 20px;
+      background-color: transparent;
+      text-transform: uppercase;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      display: flex;
+      justify-content: center;
+      height: calc( #{$nav-link-height} / #{$nav-link-number} );
+      position: relative;
+      font-weight: bold;
+      margin: 0 20px;
     }
   }
 }
