@@ -12,9 +12,9 @@ This is a long awaited post of my experience at UX/UI Masterclass (04.06.16) ran
 * Importance of personas, empathy mapping, user journey, user testing (prototypes)
 * Come up with an app which solves a problem
 
-<img src="https://cdn-images-1.medium.com/max/1000/1*Im-A6ZTnqq7TVTmJfQBfkQ.jpeg" alt="UX/UI Masterclass" height="465px" width="700px">
+<img src="https://cdn-images-1.medium.com/max/1000/1*Im-A6ZTnqq7TVTmJfQBfkQ.jpeg" alt="UX/UI Masterclass" height="465px" width="700px" class="img-responsive">
 
-<img src="https://cdn-images-1.medium.com/max/800/1*fbJCG0vAu7RkyuqNEKlIuw.jpeg" alt="UX/UI Masterclass" height="465px" width="700px">
+<img src="https://cdn-images-1.medium.com/max/800/1*fbJCG0vAu7RkyuqNEKlIuw.jpeg" alt="UX/UI Masterclass" height="465px" width="700px" class="img-responsive">
 
 ## Brief 
 Our app was aimed at finding a mentor to help a user learn UX design and consequently get to shadow the mentor. The user finds nearest available mentor through location search and gets to choose which mentor they would like to connect with.
@@ -32,15 +32,15 @@ First and foremost, we needed to establish our persona which we would be targeti
 
 This stage helps us to be in the user’s shoes and come up with assumptions on how they would feel, think, hear, see and do.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*wZFj7j1lNBuiujZimB6AIw.jpeg" alt="Empathy Map" height="465px" width="700px">
+<img src="https://cdn-images-1.medium.com/max/800/1*wZFj7j1lNBuiujZimB6AIw.jpeg" alt="Empathy Map" height="465px" width="700px" class="img-responsive">
 
-<img src="https://cdn-images-1.medium.com/max/800/1*rsze9rgLSqo79yuOyVwf8w.jpeg" alt="Me speaking about our empathy map" height="465px" width="700px">
+<img src="https://cdn-images-1.medium.com/max/800/1*rsze9rgLSqo79yuOyVwf8w.jpeg" alt="Me speaking about our empathy map" height="465px" width="700px" class="img-responsive">
 
 ## User Journey
 
 We made a user journey for both new user who are signing up and a user who is already logged in. For this part of the project, you want to make the journey as linear as possible therefore focusing on your primary feature. As the app develops and gains popularity, you can then add other features.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*8mO4U0-ZeruVv2JzvEAyhg.jpeg" alt="Keep user journey linear" height="465px" width="700px">
+<img src="https://cdn-images-1.medium.com/max/800/1*8mO4U0-ZeruVv2JzvEAyhg.jpeg" alt="Keep user journey linear" height="465px" width="700px" class="img-responsive">
 
 ## Prototype — User Testing
 
