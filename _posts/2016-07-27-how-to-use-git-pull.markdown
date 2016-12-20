@@ -5,6 +5,8 @@ date: 2016-07-27
 categories: blog
 ---
 
+<img src="https://cdn-images-1.medium.com/max/1000/1*jQpgV4UVWxJx80RtI86ejg.jpeg" alt="Photo from unsplash.com" height="465px" width="700px" class="img-responsive">
+
 How to use git pull function? Let me tell you how I would usually push my first initial commit onto [GitHub](https://github.com) **IF** I already had some files on my local directory i.e. laptop.
 
 1. I’d create a **new repository** on [GitHub](https://github.com) and initialize it with a **README file**.
