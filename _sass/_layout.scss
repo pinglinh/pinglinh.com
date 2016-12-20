@@ -319,6 +319,7 @@ body {
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  text-align: center;
 }
 
 .post-link {
@@ -348,6 +349,7 @@ body {
 
 .post-content {
   margin-bottom: $spacing-unit;
+  margin: auto 2em;
 
   h2 {
     font-size: 32px;
