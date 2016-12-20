@@ -25,7 +25,7 @@ $ git clone https://github.com/USERNAME/REPOSITORY_NAME.git FOLDER_NAME
 
 There is nothing wrong with doing it this way but I knew there was a way to do this without copying and pasting files and just using the command line.
 
-<span text-align="center">---</span>
+<p style="text-align: center">- - -</p>
 
 ## How to do it with just the command line
 
