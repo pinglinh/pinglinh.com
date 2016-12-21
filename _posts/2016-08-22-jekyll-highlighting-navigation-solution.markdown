@@ -13,14 +13,17 @@ My code:
 
 ```
 HTML
+{% raw %}
 <a class="page-link" href="{{ site.baseurl }}/aboutme/" {% if page.url == '/aboutme' %} class="current" {% endif %}>About Me</a>
-The {% if page.url == ‘/aboutme’ %} class=”current” {% endif %} is Jekyll’s way of saying ‘if the page url renders /aboutme then apply the current class' and then you end your if statement with {% endif %}. 
+The {% if page.url == ‘/aboutme’ %} class=”current” {% endif %} is Jekyll’s way of saying ‘if the page url renders /aboutme then apply the current class' and then you end your if statement with {% endif %}.
 
 CSS
 .current {
    color: #45ADA8;
    background-color: #FFFFFF;
 }
+
+{% endraw %}
 ```
 
 Pretty simple right?
