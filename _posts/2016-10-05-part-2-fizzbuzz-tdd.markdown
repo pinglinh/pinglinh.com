@@ -14,9 +14,13 @@ Following from [Part 1 of FizzBuzz](https://medium.com/@pinglinh/part-1-fizzbuzz
 Here is what TDD is in my own words:
 
 1. Write a test case before the actual code as this drives towards writing better code or code that you actually need
+
 2. Run the tests and see it fail since you haven’t implemented the code yet but this shows that the test is working
+
 3. Then write the code and implement it
+
 4. The tests should render successful if the code has met all the conditions/requirements
+
 5. The code must be cleaned up (refactored) throughout testing and implementation stage to make sure it is readable and it is not repeated - the test made before is there to check that the code is still working even after refactoring
 
 As I will be writing the code in pure Ruby, I will be using RSpec, the testing tool for Ruby.
@@ -129,11 +133,11 @@ require 'FizzBuzz'
 
 describe FizzBuzz do
   context 'if a number is divisible by' do
-  it '3 print Fizz' do
-    fizz_buzz = FizzBuzz.new
-    result = fizz_buzz.divisible_by_three(3)
-    expect(result).to eq("Fizz")
-  end
+    it '3 print Fizz' do
+      fizz_buzz = FizzBuzz.new
+      result = fizz_buzz.divisible_by_three(3)
+      expect(result).to eq("Fizz")
+    end
   end
 end
 {% endhighlight %}
@@ -160,7 +164,7 @@ Now RSpec tells us that the expected was “Fizz” however we actually got nil.
 {% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
-  "Fizz"
+    "Fizz"
   end
 end
 {% endhighlight %}
@@ -176,11 +180,11 @@ But of course we know that we don’t just simply want any number to be “Fizz�
 {% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
-  if number % 3 == 0
-    "Fizz"
-  else
-    number
-  end
+    if number % 3 == 0
+      "Fizz"
+    else
+      number
+    end
   end
 end
 {% endhighlight %}
@@ -197,29 +201,29 @@ require 'spec_helper'
 
 describe FizzBuzz do
   context 'if a number is divisible by' do
-  it '3 print Fizz' do
-    fizz_buzz = FizzBuzz.new
-    result = fizz_buzz.divisible_by_three(3)
-    expect(result).to eq("Fizz")
-  end
+    it '3 print Fizz' do
+      fizz_buzz = FizzBuzz.new
+      result = fizz_buzz.divisible_by_three(3)
+      expect(result).to eq("Fizz")
+    end
 
-  it '5 print Buzz' do
-    fizz_buzz = FizzBuzz.new
-    result = fizz_buzz.divisible_by_five(5)
-    expect(result).to eq("Buzz")
-  end
+    it '5 print Buzz' do
+      fizz_buzz = FizzBuzz.new
+      result = fizz_buzz.divisible_by_five(5)
+      expect(result).to eq("Buzz")
+    end
 
-  it '15 print FizzBuzz' do
-    fizz_buzz = FizzBuzz.new
-    result = fizz_buzz.divisible_by_fifteen(15)
-    expect(result).to eq("FizzBuzz")
-  end
+    it '15 print FizzBuzz' do
+      fizz_buzz = FizzBuzz.new
+      result = fizz_buzz.divisible_by_fifteen(15)
+      expect(result).to eq("FizzBuzz")
+    end
 
-  it 'any other numbers' do
-    fizz_buzz = FizzBuzz.new
-    result = fizz_buzz.divisible_by_any_number(1)
-    expect(result).to eq(1)
-  end
+    it 'any other numbers' do
+      fizz_buzz = FizzBuzz.new
+      result = fizz_buzz.divisible_by_any_number(1)
+      expect(result).to eq(1)
+    end
   end
 end
 {% endhighlight %}
@@ -265,7 +269,9 @@ end
 You should usually do the following steps based on failed tests:
 
 1. Undefined method - go and define the method
+
 2. Method returned “nil” - input what you expected in your test
+
 3. Test passed-go ahead and define the next method
 
 As the other methods were pretty much the same I knew it would work but you should follow it step by step as the failed tests in a way guide you to write the next bit of code.
@@ -340,7 +346,6 @@ require 'spec_helper'
 describe FizzBuzz do
   context 'if a number is divisible by' do
   let(:fizz_buzz) { FizzBuzz.new }
-
     it '3 print Fizz' do
       result = fizz_buzz.divisible_by(3)
       expect(result).to eq("Fizz")
@@ -360,7 +365,6 @@ describe FizzBuzz do
       result = fizz_buzz.divisible_by(1)
       expect(result).to eq(1)
     end
-
   end
 end
 {% endhighlight %}
@@ -372,7 +376,9 @@ I’m sure I can refactor this further however these are the only ways I know of
 Ok so after thinking around for a bit, I have changed 2 things:
 
 1. I realised that my tests do not have a test for when a number is not divisible by 3, 5, or 15.
+
 2. Change the wording in my spec file.
+
 3. Refactoring the program code.
 
 How my spec file looks like now:
@@ -384,7 +390,6 @@ require 'spec_helper'
 describe FizzBuzz do
   context 'when given a number' do
   let(:fizz_buzz) { FizzBuzz.new }
-
     it 'returns Fizz when divisible by 3' do
       result = fizz_buzz.divisible_by(3)
       expect(result).to eq("Fizz")
@@ -414,7 +419,6 @@ describe FizzBuzz do
       result = fizz_buzz.divisible_by(1)
       expect(result).to eq(1)
     end
-
   end
 end
 {% endhighlight %}
