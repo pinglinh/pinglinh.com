@@ -19,24 +19,43 @@ I want to write a program which will:
 We now need to write out our expected answers for the first 20 numbers entered.
 
 1. 1
+
 2. 2
+
 3. Fizz
+
 4. 4
+
 5. Buzz
+
 6. Fizz
+
 7. 7
+
 8. 8
+
 9. Fizz
+
 10. Buzz
+
 11. 11
+
 12. Fizz
+
 13. 13
+
 14. 14
+
 15. FizzBuzz
+
 16. 16
+
 17. 17
+
 18. Fizz
+
 19. 19
+
 20. Buzz
 
 When we have written our code based on the conditions we have set out before and also the answers that we expect, we can check whether our code works by comparing the rendered answer with the expected answers. If we get different answers to our test, this means that we have to go back to our program to fix our code. However if our program does render the correct answers when we input numbers 1–20, this means our program is working!
