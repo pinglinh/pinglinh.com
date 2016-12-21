@@ -134,4 +134,6 @@ And that my friends, is how you reverse a string in Ruby without using the rever
 
 There are plenty of other ways to do this but for now this is the simplest way that I understand. If anyone knows of other methods, please post the code in the comments below! I would love to know but please do explain what you are doing because I’m still a beginner and struggle to understand sometimes. Thanks!
 
-This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest) .
