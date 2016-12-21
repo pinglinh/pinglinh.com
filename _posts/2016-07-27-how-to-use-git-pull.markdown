@@ -72,3 +72,8 @@ $ git push origin master
 So happy I can finally do it with the command line as oppose to faffing around with copying and pasting my files onto a cloned repository.
 
 Hopefully this will also help those who are new to using **Git** and **GitHub**!
+
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
+
