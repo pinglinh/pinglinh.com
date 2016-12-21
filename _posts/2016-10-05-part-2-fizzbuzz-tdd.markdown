@@ -140,7 +140,7 @@ end
 
 Running Rspec:
 
-<img src="https://cdn-images-1.medium.com/max/800/1*NHS_fi-r30C-ACIFt6gEfg.png" alt=“”>
+<img src="https://cdn-images-1.medium.com/max/800/1*NHS_fi-r30C-ACIFt6gEfg.png" class="img-responsive">
 
 You can see that divisible_by_three method is not defined yet. Therefore we go back into our fizzbuzz.rb file to define this method:
 
@@ -153,7 +153,7 @@ end
 
 Running RSpec:
 
-<img src="https://cdn-images-1.medium.com/max/800/1*DAYXL21S92Slz3X4PZZ6ww.png" alt=“” height=“465px” width=“700px” class=“img-responsive”>
+<img src="https://cdn-images-1.medium.com/max/800/1*DAYXL21S92Slz3X4PZZ6ww.png" class="img-responsive">
 
 Now RSpec tells us that the expected was “Fizz” however we actually got nil. This is because our method did not return anything. We can now go on to include Fizz into our method:
 
@@ -167,7 +167,7 @@ end
 
 Running RSpec:
 
-<img src="https://cdn-images-1.medium.com/max/800/1*GSQqF2JESJwLVGq9Zok-kA.png" alt=“” height=“465px” width=“700px” class=“img-responsive”>
+<img src="https://cdn-images-1.medium.com/max/800/1*GSQqF2JESJwLVGq9Zok-kA.png" class="img-responsive">
 
 This means our test has now passed!
 
@@ -185,7 +185,7 @@ class FizzBuzz
 end
 ```
 
-<img src="https://cdn-images-1.medium.com/max/800/1*bv7Jh5eO6y61bJZzGXUDDQ.png" alt=“” height=“465px” width=“700px” class=“img-responsive”>
+<img src="https://cdn-images-1.medium.com/max/800/1*bv7Jh5eO6y61bJZzGXUDDQ.png" class="img-responsive">
 
 The test has passed! Hooray!
 
@@ -226,7 +226,7 @@ end
 
 Running RSpec
 
-<img src="https://cdn-images-1.medium.com/max/800/1*Nzk9mWGNQFpOJokaAaBakQ.png" alt=“” height=“465px” width=“700px” class=“img-responsive”>
+<img src="https://cdn-images-1.medium.com/max/800/1*Nzk9mWGNQFpOJokaAaBakQ.png" class="img-responsive">
 
 As expected, the three new methods we tested are not yet defined in our code. We can go ahead and write them up in our fizzbuzz.rb file:
 
@@ -270,7 +270,7 @@ You should usually do the following steps based on failed tests:
 
 As the other methods were pretty much the same I knew it would work but you should follow it step by step as the failed tests in a way guide you to write the next bit of code.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*CeEZAl2mxQB77j7SJBTk-Q.png" alt=“” height=“465px” width=“700px” class=“img-responsive”>
+<img src="https://cdn-images-1.medium.com/max/800/1*CeEZAl2mxQB77j7SJBTk-Q.png" class="img-responsive">
 
 You can now see that all tests have passed!
 
@@ -433,7 +433,7 @@ end
 
 The test would pass when it shouldn’t because I want my program to have specified the control flow of only printing “Fizz” when divisible by 3.
 
-Now because I have changed my test back to the method names of divisible_by_three/five/fifteen instead of divisible_by, my code no longer works. This was a tricky situation for me as I did not know how I could refactor the code whilst having 3 different method names in my spec file! **However someone pointed out to me that I can call a class method within the class!!!!!!!!!!!!!** 😪😱😭
+Now because I have changed my test back to the method names of divisible_by_three/five/fifteen instead of divisible_by, my code no longer works. This was a tricky situation for me as I did not know how I could refactor the code whilst having 3 different method names in my spec file! **However someone pointed out to me that I can call a class method within the class!!!!!!!!!!!!!** 😪 😱 😭
 
 Take a look:
 
