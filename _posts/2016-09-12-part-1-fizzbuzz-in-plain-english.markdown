@@ -40,3 +40,8 @@ We now need to write out our expected answers for the first 20 numbers entered.
 20. Buzz
 
 When we have written our code based on the conditions we have set out before and also the answers that we expect, we can check whether our code works by comparing the rendered answer with the expected answers. If we get different answers to our test, this means that we have to go back to our program to fix our code. However if our program does render the correct answers when we input numbers 1–20, this means our program is working!
+
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
+
