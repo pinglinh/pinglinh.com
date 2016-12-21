@@ -30,7 +30,9 @@ You can visit our repo here [GDGHackathon2016](https://github.com/kaylashapiro/G
 Along the way we bumped into many issues such as:
 
 1. With the Tweepy API, when we made too many requests we would have to wait a while before making another run of requests.
+
 2. We could not get the back-end Python code to communicate with the front-end JavaScript to display the hashtags.
+
 3. Clicking on coordinates could not load city specific hashtags.
 
 We are hoping to fix all of these issues and have a working app soon! At the end of the hackathon we presented it to other teams and organisers. We had a really fun time getting together and hacking away!
