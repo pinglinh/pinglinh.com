@@ -25,13 +25,13 @@ As I will be writing the code in pure Ruby, I will be using RSpec, the testing t
 
 First the RSpec gem has to be installed:
 
-```
+{% highlight ruby %}
 $ gem install rspec
-```
+{% endhighlight %}
 
 Then make a new project directory with **lib, spec directories** which should have the **program** and **spec file** inside respectively.
 
-```
+{% highlight ruby %}
 FizzBuzz_rspec
           \_____lib
                   \_____fizzbuzz.rb
@@ -39,84 +39,84 @@ FizzBuzz_rspec
                   \_____fizzbuzz_spec.rb
                   \_____spec_helper.rb
           \_____Gemfile
-```
+{% endhighlight %}
 
 Alternatively you can also do the following command to set up the spec directory:
 
-```
+{% highlight ruby %}
 $ rspec init
 or
 $ rspec --init
-```
+{% endhighlight %}
 
 Create a Gemfile with the following:
 
-```
+{% highlight ruby %}
 source "https://rubygems.org"
 
 gem "rspec"
-```
+{% endhighlight %}
 
 Then run the following command in the project directory to install the rspec gem and all its dependencies:
 
-```
+{% highlight ruby %}
 $ bundle install
-```
+{% endhighlight %}
 
 In the fizzbuzz_spec.rb file we want to input the following code:
 
-```
+{% highlight ruby %}
 describe FizzBuzz do
 end
-```
+{% endhighlight %}
 
 Then when we run the RSpec command which checks our tests with corresponding code/program/method:
 
-```
+{% highlight ruby %}
 $ rspec
-```
+{% endhighlight %}
 
 The error will be as follows:
 
-```
+{% highlight ruby %}
 fizzbuzz_rspec/spec/fizzbuzz_spec.rb:3:in `<top (required)>': uninitialized constant FizzBuzz (NameError)
-```
+{% endhighlight %}
 
 This is because we do not yet have a class method called FizzBuzz yet. In fizzbuzz.rb file we need to input:
 
-```
+{% highlight ruby %}
 class FizzBuzz do
 end
-```
+{% endhighlight %}
 
 Require this in our fizzbuzz_spec.rb file:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 
 describe FizzBuzz do
 end
-```
+{% endhighlight %}
 
 Now when we run RSpec, we get:
 
-```
+{% highlight ruby %}
 No examples found.
 
 
 Finished in 0.00006 seconds
 0 examples, 0 failures
-```
+{% endhighlight %}
 
 This means that the files are now linked and we can start doing our first test.
 
 Extra notes: You can also add the spec_helper.rb file (or it has already been added when you did rspec init command) in your spec directory to configure your command line output:
 
-```
+{% highlight ruby %}
 RSpec.configure do |config|
  config.color = true
 end
-```
+{% endhighlight %}
 
 This will include colours in your terminal. There are other configurations which can be found at RSpec.
 
@@ -124,7 +124,7 @@ This will include colours in your terminal. There are other configurations which
 
 The first test I will be writing is to meet the conditions of printing out **Fizz when a number is divisible by 3**:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 
 describe FizzBuzz do
@@ -136,7 +136,7 @@ describe FizzBuzz do
   end
   end
 end
-```
+{% endhighlight %}
 
 Running Rspec:
 
@@ -144,12 +144,12 @@ Running Rspec:
 
 You can see that divisible_by_three method is not defined yet. Therefore we go back into our fizzbuzz.rb file to define this method:
 
-```
+{% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
   end
 end
-```
+{% endhighlight %}
 
 Running RSpec:
 
@@ -157,13 +157,13 @@ Running RSpec:
 
 Now RSpec tells us that the expected was “Fizz” however we actually got nil. This is because our method did not return anything. We can now go on to include Fizz into our method:
 
-```
+{% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
   "Fizz"
   end
 end
-```
+{% endhighlight %}
 
 Running RSpec:
 
@@ -173,7 +173,7 @@ This means our test has now passed!
 
 But of course we know that we don’t just simply want any number to be “Fizz” and it is just for numbers that are divisible by 3. As the test is working up to this point, we can go ahead to write the method and see whether the test is still passing:
 
-```
+{% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
   if number % 3 == 0
@@ -183,7 +183,7 @@ class FizzBuzz
   end
   end
 end
-```
+{% endhighlight %}
 
 <img src="https://cdn-images-1.medium.com/max/800/1*bv7Jh5eO6y61bJZzGXUDDQ.png" class="img-responsive">
 
@@ -191,7 +191,7 @@ The test has passed! Hooray!
 
 Now we can go ahead to write up the tests for our other conditions:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 require 'spec_helper'
 
@@ -222,7 +222,7 @@ describe FizzBuzz do
   end
   end
 end
-```
+{% endhighlight %}
 
 Running RSpec
 
@@ -230,7 +230,7 @@ Running RSpec
 
 As expected, the three new methods we tested are not yet defined in our code. We can go ahead and write them up in our fizzbuzz.rb file:
 
-```
+{% highlight ruby %}
 class FizzBuzz
   def divisible_by_three(number)
     if number % 3 == 0
@@ -260,7 +260,7 @@ class FizzBuzz
     number
   end
 end
-```
+{% endhighlight %}
 
 You should usually do the following steps based on failed tests:
 
@@ -280,7 +280,7 @@ Although these tests and code work, it’s not following the principles of DRY (
 
 In the spec file, I am repeating the instance variable **fizz_buzz = FizzBuzz.new** in all of my tests therefore I can actually refactor this into one line like so:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 require 'spec_helper'
 
@@ -309,13 +309,13 @@ describe FizzBuzz do
     end
   end
 end
-```
+{% endhighlight %}
 
 After running RSpec the test still passes!
 
 Now we can start to refactor our code. Instead of defining a method for each method, I can define one and use control flow.
 
-```
+{% highlight ruby %}
 class FizzBuzz
   def divisible_by(number)
     if number % 15 == 0
@@ -329,11 +329,11 @@ class FizzBuzz
     end
   end
 end
-```
+{% endhighlight %}
 
 Since I changed the method name, this also needs to reflect in my spec file:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 require 'spec_helper'
 
@@ -363,7 +363,7 @@ describe FizzBuzz do
 
   end
 end
-```
+{% endhighlight %}
 
 I’m sure I can refactor this further however these are the only ways I know of right now. Hopefully as I learn more about Ruby and rspec, I will come across many other ways in which the code can be written.
 
@@ -377,7 +377,7 @@ Ok so after thinking around for a bit, I have changed 2 things:
 
 How my spec file looks like now:
 
-```
+{% highlight ruby %}
 require 'FizzBuzz'
 require 'spec_helper'
 
@@ -417,19 +417,19 @@ describe FizzBuzz do
 
   end
 end
+{% endhighlight %}
 
-```
 As you can see, I am now more explicit in my description of my tests which makes it clearer as to what the tests are testing (and what the code should do).
 
 I also now have a negative test case for when a number is not divisible by each specified number. This means I no longer need to have the ‘returns any other number’ test case.
 
 This is better because I’m being more specific in terms of writing the program. Previously, without having the negative test case, when I wrote this bit of code:
 
-```
+{% highlight ruby %}
 def divisible_by_three(number)
   "Fizz"
 end
-```
+{% endhighlight %}
 
 The test would pass when it shouldn’t because I want my program to have specified the control flow of only printing “Fizz” when divisible by 3.
 
@@ -437,7 +437,7 @@ Now because I have changed my test back to the method names of divisible_by_thre
 
 Take a look:
 
-```
+{% highlight ruby %}
 class FizzBuzz
 
   def divisible_by(number)
@@ -467,7 +467,7 @@ class FizzBuzz
   end
 
 end
-```
+{% endhighlight %}
 
 Can you see how I am still defining the individual methods but calling the universal method inside them? At the moment I feel like this is the only way to refactor without having to define all the methods! I have made the specific methods private so that they cannot be called outside of the class.
 
