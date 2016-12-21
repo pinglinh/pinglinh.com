@@ -16,7 +16,7 @@ This is a long awaited post of my experience at UX/UI Masterclass (04.06.16) ran
 
 <img src="https://cdn-images-1.medium.com/max/800/1*fbJCG0vAu7RkyuqNEKlIuw.jpeg" alt="UX/UI Masterclass" height="465px" width="700px" class="img-responsive">
 
-## Brief 
+## Brief
 Our app was aimed at finding a mentor to help a user learn UX design and consequently get to shadow the mentor. The user finds nearest available mentor through location search and gets to choose which mentor they would like to connect with.
 
 ## Personas
@@ -57,6 +57,9 @@ For user testing we had a member of another group to look at our prototype. We e
 
 Overall it was a great day packed full of information on UX/UI design!
 
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
 
 
 
