@@ -60,3 +60,7 @@ Things to note:
 That’s it! If you have also came across this problem, I hope I have been able to shed some light 💡.
 
 Massive thank you to [Eddie](https://twitter.com/eddiejaoude) who saw where the issue was in my code. He also came across this before but has now learned how to do it using Jekyll. We both learned something new 🤓.
+
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
