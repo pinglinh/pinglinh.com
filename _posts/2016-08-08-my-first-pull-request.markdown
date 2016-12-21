@@ -15,73 +15,116 @@ Last week I submitted my first ever pull request to [WeRockTech](https://github.
 
 ## How to submit a pull request
 1. Go to the main page of the repository at https://github.com/WeRockTech/werocktech.github.io
+
 2. Click on the ‘Fork’ button on the top right-hand corner (note: GitHub layout may change in the future so it may be somewhere else)
+
 3. This then takes you to https://github.com/pinglinh/werocktech.github.io — notice that the copied repo is now under my username
+
 4. On terminal, go to where you want the repo to be (i.e. in my case I always choose Desktop), clone the repo and cd (change directory) into it:
-```
-$ cd Desktop
-$ git clone https://github.com/pinglinh/werocktech.github.io
-$ cd werocktech.github.io
-```
+
+    ```
+    $ cd Desktop
+    ```
+
+    ```
+    $ git clone https://github.com/pinglinh/werocktech.github.io
+    ```
+
+    ```
+    $ cd werocktech.github.io
+    ```
+
 5. Add the upstream (original) repo as a remote so that you can track it and sync it with your forked master branch later:
-```
-$ git remote add upstream https://github.com/WeRockTech/werocktech.github.io.git
-```
-(upstream just means the original repo you forked from)
+
+    ```
+    $ git remote add upstream https://github.com/WeRockTech/werocktech.github.io.git
+    ```
+
+    (upstream just means the original repo you forked from)
+
 6. Create a new branch where you will be making changes:
-```
-$ git branch experiment
-```
-I called my branch ‘experiment’ since i would be experimenting with some of my ideas I had in mind but obviously you can call the new branch how you like it to be. It is advisable to name it something that will help you recognise what it is especially when working with many branches, you want to remember which is which.
-```
-$ git checkout experiment
-```
-This command switches to the branch you have just created.
+
+    ```
+    $ git branch experiment
+    ```
+
+    I called my branch ‘experiment’ since i would be experimenting with some of my ideas I had in mind but obviously you can call the new branch how you like it to be. It is advisable to name it something that will help you recognise what it is especially when working with many branches, you want to remember which is which.
+
+    ```
+    $ git checkout experiment
+    ```
+
+    This command switches to the branch you have just created.
+
 7. In the branch you’ve just created, you can make changes using **add**, **commit** and **push** commands. To find out how to do this [click here](https://medium.com/@pinglinh/how-to-use-git-pull-80ad77a8afc6#.lo0gwag41) to check out my other blog post.
+
 8. Once you are happy with your changes, you will need to update your master branch with the upstream repo:
-```
-$ git fetch upstream
-$ git checkout master
-$ git merge upstream/master
-```
-The **fetch** command pulls up any commits from the upstream repo. The **merge** command will input any new changes from the upstream repo into your forked master branch.
+
+    ```
+    $ git fetch upstream
+    ```
+
+    ```
+    $ git checkout master
+    ```
+
+    ```
+    $ git merge upstream/master
+    ```
+
+    The **fetch** command pulls up any commits from the upstream repo. The **merge** command will input any new changes from the upstream repo into your forked master branch.
+
 9. Now that the master branch is up-to-date, you can go ahead and merge this with the other branch you created:
-```$ git checkout experiment```
-Always go to the branch where you want the changes to end up. In this case we want our updated master branch to be reflected in our ‘experiment’ branch.
+
+    ```$ git checkout experiment```
+
+    Always go to the branch where you want the changes to end up. In this case we want our updated master branch to be reflected in our ‘experiment’ branch.
+
 10. Then merge your master branch:
-```$ git merge master```
+
+    ```$ git merge master```
+
 11. At this stage I encountered a conflict which I will explain how to resolve below, otherwise go to number 14 for pull request section.
-My conflict message on terminal:
-```
-$ git merge master
-Auto-merging css/custom.css
-Auto-merging _includes/navigation.html
-Auto-merging _includes/footer.html
-Auto-merging _includes/banner.html
-CONFLICT (content): Merge conflict in _includes/banner.html
-```
-The output tells me that the conflict is in the banner.html file in _includes folder.
+
+    My conflict message on terminal:
+
+    ```
+    $ git merge master
+    Auto-merging css/custom.css
+    Auto-merging _includes/navigation.html
+    Auto-merging _includes/footer.html
+    Auto-merging _includes/banner.html
+    CONFLICT (content): Merge conflict in _includes/banner.html
+    ```
+
+    The output tells me that the conflict is in the banner.html file in _includes folder.
+
 12. You can also check which files have a conflict or have been modified by running the following command:
-```
-$ git status -s
-UU _includes/banner.html
-M  _includes/footer.html
-M  _includes/navigation.html
-M  css/custom.css
-```
-U means conflict and M means modified.
+
+    ```
+    $ git status -s
+    UU _includes/banner.html
+    M  _includes/footer.html
+    M  _includes/navigation.html
+    M  css/custom.css
+    ```
+
+    U means conflict and M means modified.
+
 13. In my case, my conflict was in the banner.html file. Opening up the file, this showed up:
-```
-<<<<<<< 9a636223ace3b636f3dbfbcedcdc1de9f0860871
-<i class="fa fa-youtube-square fa-1x"></i>
-=======
-<i class="fa fa-youtube-play"></i>
->>>>>>> Unfixed footer and added youtube icon
->>>>>>>
-```
-The first section before ===== is what came from the master branch and the bottom section is what was in my experiment branch. In order to resolve the conflict, you delete the whole section between <<<< and >>>> and input what you want. Add and commit your changes with a message saying you have resolved the conflict and state what was the problem, for example in my case it would be ‘git commit -m “Resolved youtube icon conflict”’ and make sure to push your changes to the right branch i.e. experiment in my scenario.
-14. Now that everything is resolved, we can submit a pull request:
-Go onto the forked repo on GitHub and click on ‘**New Pull Request**’
+
+    ```
+    <<<<<<< 9a636223ace3b636f3dbfbcedcdc1de9f0860871
+    <i class="fa fa-youtube-square fa-1x"></i>
+    =======
+    <i class="fa fa-youtube-play"></i>
+    >>>>>>> Unfixed footer and added youtube icon
+    >>>>>>>
+    ```
+
+    The first section before ===== is what came from the master branch and the bottom section is what was in my experiment branch. In order to resolve the conflict, you delete the whole section between <<<< and >>>> and input what you want. Add and commit your changes with a message saying you have resolved the conflict and state what was the problem, for example in my case it would be ‘git commit -m “Resolved youtube icon conflict”’ and make sure to push your changes to the right branch i.e. experiment in my scenario.
+    14. Now that everything is resolved, we can submit a pull request:
+    Go onto the forked repo on GitHub and click on ‘**New Pull Request**’
 
 <img src="https://cdn-images-1.medium.com/max/1400/1*oB2we8QJmZOnHrvKveuIxA.png" alt="Forked repository of WeRockTech" height="465px" width="700px" class="img-responsive">
 
