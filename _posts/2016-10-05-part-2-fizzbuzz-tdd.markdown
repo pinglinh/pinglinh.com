@@ -473,4 +473,6 @@ Can you see how I am still defining the individual methods but calling the unive
 
 If anybody knows of another way to do this please let me know in the comments! 🤓
 
+<p style="text-align: center">- - -</p>
+
 This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
