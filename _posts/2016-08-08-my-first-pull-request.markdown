@@ -124,3 +124,8 @@ You can also add any comments to your pull request or close it if you no longer 
 <img src="https://cdn-images-1.medium.com/max/800/1*DMPxlG-rI0KNzKtuBu_f4Q.png" alt="Commenting your pull request." height="465px" width="700px" class="img-responsive">
 
 That’s it! You then wait for the owner to review your request. If they are happy with it, they will merge it into the master branch. Alternatively they may comment on your code and provide other suggestions to which you can then change using the add, commit and push commands — this will automatically be updated for the owner to see and review further.
+
+<p style="text-align: center">- - -</p>
+
+This blog post has also been published on [medium](https://medium.com/@pinglinh/latest).
+
