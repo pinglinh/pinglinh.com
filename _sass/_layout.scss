@@ -302,6 +302,11 @@ body {
  */
 .page-content {
   padding: $spacing-unit 0;
+  margin: auto 15%;
+
+  @include media-query($on-palm) {
+      margin: auto;
+  }
 }
 
 .page-heading {
