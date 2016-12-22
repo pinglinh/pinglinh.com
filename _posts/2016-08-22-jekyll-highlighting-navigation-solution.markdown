@@ -11,20 +11,26 @@ Two days ago I tried to set my [website](www.pinglinh.com) navigation in a way w
 
 My code:
 
-```
-HTML
+{% highlight html %}
 {% raw %}
-<a class="page-link" href="{{ site.baseurl }}/aboutme/" {% if page.url == '/aboutme' %} class="current" {% endif %}>About Me</a>
-The {% if page.url == ‘/aboutme’ %} class=”current” {% endif %} is Jekyll’s way of saying ‘if the page url renders /aboutme then apply the current class' and then you end your if statement with {% endif %}.
+HTML
 
+<a class="page-link" href="{{ site.baseurl }}/aboutme/" {% if page.url == '/aboutme' %} class="current" {% endif %}>About Me</a>
+{% endraw %}
+{% endhighlight %}
+
+{% raw %}
+The `{% if page.url == ‘/aboutme’ %} class=”current” {% endif %}` is Jekyll’s way of saying ‘if the page url renders /aboutme then apply the current class' and then you end your if statement with `{% endif %}`.
+{% endraw %}
+
+{% highlight css %}
 CSS
+
 .current {
    color: #45ADA8;
    background-color: #FFFFFF;
 }
-
-{% endraw %}
-```
+{% endhighlight %}
 
 Pretty simple right?
 
@@ -44,9 +50,9 @@ e.g. class="page-link current"
 
 When he said this I was literally like ‘oooooooooooooooooohs’ and quickly amended my code to this:
 
-```
+{% highlight html %}
 <a class="page-link {% if page.url == '/aboutme/' %} current {% endif %}" href="{{ site.baseurl }}/aboutme/">About Me</a>
-```
+{% endhighlight %}
 
 And it worked!!!!!!!!!!!!!!
 
