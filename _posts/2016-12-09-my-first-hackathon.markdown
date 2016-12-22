@@ -39,7 +39,8 @@ We are hoping to fix all of these issues and have a working app soon! At the end
 
 I already can’t wait for the next hackathon! Check out the video below on the day’s hightlights!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hW7bmi2F3jI" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.youtube.com/embed/hW7bmi2F3jI" frameborder="0" allowfullscreen></iframe></div>
 
 Follow their [Twitter](https://twitter.com/gdghackathon) page for updates on the next hackathon!
 
