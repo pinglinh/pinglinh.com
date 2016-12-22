@@ -21,6 +21,7 @@ body {
 .site-content {
   overflow: auto;
   margin: 0 auto;
+  width: 100%;
 }
 
 .main {
@@ -349,7 +350,7 @@ body {
 
 .post-content {
   margin-bottom: $spacing-unit;
-  margin: auto 20%;
+  margin: auto;
 
   h2 {
     font-size: 32px;
