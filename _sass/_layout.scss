@@ -277,21 +277,21 @@ body {
 @include media-query($on-laptop) {
   .footer-col-1,
   .footer-col-2 {
-      width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-      width:         calc(50% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    width:         calc(50% - (#{$spacing-unit} / 2));
   }
 
   .footer-col-3 {
-      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-      width:         calc(100% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
 @include media-query($on-palm) {
   .footer-col {
-      float: none;
-      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-      width:         calc(100% - (#{$spacing-unit} / 2));
+    float: none;
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
@@ -305,7 +305,7 @@ body {
   margin: auto 15%;
 
   @include media-query($on-palm) {
-      margin: auto;
+    margin: auto;
   }
 }
 
@@ -318,7 +318,7 @@ body {
   list-style: none;
 
   > li {
-      margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit;
   }
 }
 
@@ -349,7 +349,7 @@ body {
   text-align: center;
 
   @include media-query($on-laptop) {
-      font-size: 36px;
+    font-size: 36px;
   }
 }
 
@@ -361,7 +361,7 @@ body {
     font-size: 32px;
 
     @include media-query($on-laptop) {
-        font-size: 28px;
+      font-size: 28px;
     }
   }
 
@@ -369,7 +369,7 @@ body {
     font-size: 26px;
 
     @include media-query($on-laptop) {
-        font-size: 22px;
+      font-size: 22px;
     }
   }
 
@@ -377,7 +377,7 @@ body {
     font-size: 20px;
 
     @include media-query($on-laptop) {
-        font-size: 18px;
+      font-size: 18px;
     }
   }
 }
