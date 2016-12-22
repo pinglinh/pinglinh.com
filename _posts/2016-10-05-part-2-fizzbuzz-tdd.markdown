@@ -7,7 +7,7 @@ categories: blog
 
 In this part of the FizzBuzz series I will go over my experience of doing a test-driven development of FizzBuzz.
 
-<img src="https://cdn-images-1.medium.com/max/800/1*OHuHrzDF6_eznBjVOcWNNA.jpeg" alt="Photo from unsplash (as per usual - I just love their initiative and how they became successful from a side project)" height="465px" width="700px" class="img-responsive">
+<img src="https://cdn-images-1.medium.com/max/800/1*OHuHrzDF6_eznBjVOcWNNA.jpeg" alt="Photo from unsplash (as per usual - I just love their initiative and how they became successful from a side project)" class="img-responsive">
 
 Following from [Part 1 of FizzBuzz](https://medium.com/@pinglinh/part-1-fizzbuzz-in-plain-english-bf055cc6e56f#.ajf0jr1as) which I wrote in plain English, I now want to move onto writing the actual program that will meet the following conditions I have set out. I will be following the **Test Driven Development** (TDD) process to help me in writing executable and refactored code.
 
