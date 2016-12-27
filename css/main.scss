@@ -30,7 +30,7 @@ $nav-link-number:  6;
 $content-width:    800px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        801px;
 
 
 
@@ -51,9 +51,9 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
- 	"aboutme",
-	"mywork",
-	"contact",
+  "aboutme",
+  "mywork",
+  "contact",
   "base",
   "layout",
   "syntax-highlighting",
