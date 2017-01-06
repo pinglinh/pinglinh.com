@@ -1,4 +1,4 @@
-# pinglinh.com
+# pinglinh.com version 2.0
 
 ## My personal website using [Jekyll](https://jekyllrb.com/)
 
